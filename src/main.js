@@ -1,24 +1,30 @@
-import '/style.css'
-import javascriptLogo from '/src/assets/javascript.svg'
-import viteLogo from '/vite.svg'
-import { setupCounter } from './components/counter.js'
+import "/style.scss";
 
-document.querySelector('#app').innerHTML = `
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="${viteLogo}" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-      <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-    </a>
-    <h1>Hello Vite!</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
+document.querySelector("#app").innerHTML = `
+  <body>
+  <nav class="navbar">
+    <div class="logo">Logo</div>
+    <div class="menu-icon">&#9776;</div>
+    <ul class="menu">
+    <li class="submenu">
+    <a href="#">Pc</a>
+    <ul class="sub-menu">
+      <li><a href="#">Service 1</a></li>
+      <li><a href="#">Service 2</a></li>
+      <li><a href="#">Service 3</a></li>
+    </ul>
+  </li>
+  
+      <li><a href="#">Playstation</a></li>
+      <li><a href="#">Xbox</a></li>
+      <li><a href="#">Nintendo</a></li>
+     
+      <li class="search-icon">&#128269;</li>
+    </ul>
+    <div class="profile-icon">Profile</div>
+    <div class="search-bar">
+      <input type="text" placeholder="Search...">
     </div>
-    <p class="read-the-docs">
-      Click on the Vite logo to learn more
-    </p>
-  </div>
-`
-
-setupCounter(document.querySelector('#counter'))
+  </nav>
+  </body>
+`;
